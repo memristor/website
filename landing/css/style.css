@@ -118,8 +118,8 @@ font-weight: 900;
 	}
 /* Home Style */
 #tf-home{
-	background: url(../img/backgrounds/01.jpg);
-	background-size: cover;
+	background: url(../img/backgrounds/MemristorTeam.jpg);
+	background-size: 110% 100%;
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;

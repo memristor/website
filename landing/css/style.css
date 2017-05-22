@@ -8,6 +8,10 @@ body, html{
 	color: #5a5a5a;
 }
 
+img {
+    border: 1px solid #ddd;
+    height: 150px;
+}
 h1{
 	text-transform: uppercase;
 }
@@ -31,6 +35,11 @@ h5{
 	font-weight: 700;
 	line-height: 20px;
 }
+
+h6{
+	color: #e74c3c;
+	
+}
 p{
 	font-family: 'Open Sans', sans-serif;
 }
@@ -40,6 +49,20 @@ p.intro{
 	line-height: 24px;
 	font-family: 'Open Sans', sans-serif;
 }
+
+div.relative1 {
+    position: relative;
+    left: 120px;
+	top: 35px;
+}
+
+div.relative2 {
+    position: relative;
+    left: 100px;
+	top: 35px;
+}
+ 
+ 
 a{ color: rgb(248, 248, 248);}
 /*a{ color: #e74c3c;}*/
 a:hover,
@@ -156,7 +179,7 @@ a.fa.fa-angle-down {
 	border: 2px solid #b4b4b4;
 	border-radius: 50%;
 	font-size: 24px;
-	margin-top: 200px;
+	margin-top: 50px;
 	transition: all 0.5s;
 }
 a.fa.fa-angle-down:hover{
@@ -334,10 +357,11 @@ img.img-circle.team-img {
 
 #clients .item{
     padding: 0;
-    margin: 35px;
+    margin: 15px;
     color: #FFF;
     text-align: center;
 }
+
 /* Gallery Section 
 ==============================*/
 #tf-works{

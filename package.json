@@ -1,0 +1,33 @@
+{
+  "name": "memristor-website",
+  "version": "1.0.0",
+  "description": "Website for Memristor Robotics",
+  "main": "process.js",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "nodemon -w ./public -e 'html,css,png,js,jpg,json' ./build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Memristor-Robotics/Memristor-Robotics.github.io.git"
+  },
+  "keywords": [
+    "memristor",
+    "robotics",
+    "eurobot"
+  ],
+  "author": "Darko Lukic <lukicdarkoo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Memristor-Robotics/Memristor-Robotics.github.io/issues"
+  },
+  "homepage": "https://github.com/Memristor-Robotics/Memristor-Robotics.github.io#readme",
+  "devDependencies": {
+    "mustache": "^2.3.0"
+  },
+  "dependencies": {
+    "supervisor": "^0.12.0",
+    "yamljs": "^0.3.0"
+  }
+}

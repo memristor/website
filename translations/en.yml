@@ -1,0 +1,45 @@
+description: We create autonomous robots
+description_long: We are a group of students with different academic background, mechanics, electronics and programming, but with a great passion in robotics
+keywords: memristor, serbia, ftn, novi sad, eurobot
+about_text: >
+  <p>Memristor is robotics team focused on research and development. It has a role to educate members and ensure
+  development environment to enhance their skills. It brings together students from many engineering fields and
+  learning them how to build fully autonomous robots and the most important team work.</p>
+
+  <p>The team is created by professors from University of Novi Sad, Serbia in 2007, the same year when the first electronic
+  component <a href="https://en.wikipedia.org/wiki/Memristor">memristor</a> is created. Since that year Memristor is competing on <a href="http://www.eurobot.org/">Eurobot</a> competition, each year winning one of
+  first three places on national competition and achieving great results on international Eurobot competition.</p>
+pcb_design: PCB Design
+pcb_design_text: Designing PCB in Altium, Circuit Prototyping and Simulation, Soldering, CAN bus
+cad_modeling: Robot Modeling
+cad_modeling_text: Designing 3D Models & Simulation in CAD software, Robot Assembly, Components Manufecturing
+firmware_development: Firmware Development
+firmware_development_text: Programming Microcontrollers, AVR, PIC, ARM, Arduino, Odometry based Motion
+software_development: Software Development
+software_development_text: ROS, Vizualization and Simulation, Raspberry Pi, Communication, High Level Decision
+algorithm_development: Algorithm Development
+algorithm_development_text: Pathfinding, LiDAR based obstacle reconstruction, Odometry, PID
+3d_printing: 3D Printing
+3d_printing_text: Model prototyping
+join_text: <p>If you are interesting in robotics and you want to learn you are welcome!</p>
+  <div class="feature">
+     <i class="fa fa-check"></i>
+     <p>learn and apply algorithms and cutting edge technologies</p>
+  </div>
+  <div class="feature">
+     <i class="fa fa-check"></i>
+     <p>learn how to work in team and collaborate with other engineers</p>
+  </div>
+  <div class="feature">
+     <i class="fa fa-check"></i>
+     <p>write bachelor or master thesis based on your project in Memristor</p>
+  </div>
+  <div class="feature">
+     <i class="fa fa-check"></i>
+     <p>create lasting friendships and travel around Europe</p>
+  </div>
+  <div class="feature">
+     <i class="fa fa-check"></i>
+     <p>compete with the best students in the world in robotics</p>
+  </div>
+  We cought you attention? <a href="#cotnact">Fill the form and join</a>!

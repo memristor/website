@@ -1,0 +1,24 @@
+{
+  "title": "Memristor Robotics",
+  "url": "https://memristorrobotics.com/",
+  "defaultLanguage": "en",
+  "phone": "+381 64 2459972",
+  "email": "info@MemristorRobotics.com",
+  "address": "University of Novi Sad, Serbia",
+  "members": [
+    {
+      "name": "Darko Lukic",
+      "occupation": "Master student of Computer Engineering",
+      "image": "/img/team/DarkoL.jpg",
+      "linkedin": "https://www.linkedin.com/in/lukicdakroo",
+      "website": "http://lukicdarkoo.github.io/",
+      "email": "lukicdarkoo@gmail.com"
+    }
+  ],
+  "sponsors": [
+    {
+      "image": "/img/sponsors/FTN.png",
+      "title": "Faculty of Technical Sciences, Novi Sad"
+    }
+  ]
+}

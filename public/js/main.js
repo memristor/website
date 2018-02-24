@@ -77,27 +77,33 @@ function setVideoState(element, state) {
 	///////////////////////////
 
 	$('#sponsors-slider').owlCarousel({
-		loop:true,
-		margin:15,
-		dots : true,
-		nav: false,
-		autoplay : true,
-		responsive:{
-			0: {
-				items:1
-			},
-			992:{
-				items:2
-			}
-		}
+		loop: true,
+		dots: true,
+		nav: true,
+		autoplay: true,
+        autoplayTimeout: 1000,
+        items: 5,
+        mouseDrag: false,
 	});
-
 
 	// Gallery
     var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'awesome',
-        clientId: '63ee7480d47d428ca306f747f01e1c07'
+        get: 'user',
+        userId: '5404790759',
+        clientId: 'adfb62fbac2a4860a154322e0f89269e',
+        accessToken: '5404790759.1677ed0.68c78e97d8ab47d7bd70565554235ad2',
+        resolution: 'low_resolution',
+        template: '<div class="col-md-3 col-xs-6 work">\n' +
+        '<img class="img-responsive" src="{{image}}" style="width: 100%; height: 220px; object-fit: cover;" alt="">\n' +
+        '<div class="overlay"></div>\n' +
+        '<div class="work-content">\n' +
+        '<span>{{location}}</span>\n' +
+        '<h3>{{caption}}</h3>\n' +
+        '<div class="work-link">\n' +
+        '<a target="_blank" href="{{link}}"><i class="fa fa-external-link"></i></a>\n' +
+        '</div>\n' +
+        '</div>\n' +
+        '</div>'
     });
     feed.run();
 })(jQuery);

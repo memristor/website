@@ -6,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>HTML Template</title>
-    <meta name="description" content="{{#t}}description{{/t}}">
+	<title>{{title}} | {{#t}}description{{/t}}</title>
+    <meta name="description" content="{{#t}}description_long{{/t}}">
     <meta name="keywords" content="{{#t}}keywords{{/t}}">
 
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -30,7 +30,7 @@
 			<div class="container">
 				<div class="navbar-header">
 					<div class="navbar-brand">
-						<a href="_index.html">
+						<a href="{{ url }}">
 							<img class="logo" src="img/logo.png" alt="logo">
 							<img class="logo-alt" src="img/logo-alt.png" alt="logo">
 						</a>
@@ -183,21 +183,7 @@
 				<div class="section-header text-center">
 					<h2 class="title">{{#t}}Gallery{{/t}}</h2>
 				</div>
-
                 <div id="instafeed"></div>
-
-				<div class="col-md-4 col-xs-6 work">
-					<img class="img-responsive" src="./img/work1.jpg" alt="">
-					<div class="overlay"></div>
-					<div class="work-content">
-						<span>Category</span>
-						<h3>Lorem ipsum dolor</h3>
-						<div class="work-link">
-							<a href="#"><i class="fa fa-external-link"></i></a>
-							<a class="lightbox" href="./img/work1.jpg"><i class="fa fa-search"></i></a>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -243,26 +229,26 @@
 					<h2 class="title">{{#t}}Our Team{{/t}}</h2>
 				</div>
 
-                {{#members}}
-				<div class="col-sm-3">
-					<div class="team">
-						<div class="team-img">
-							<img class="img-responsive" src="{{image}}" alt="{{name}}">
-							<div class="overlay">
-								<div class="team-social">
-                                    {{#linkedin}}<a href="{{linkedin}}"><i class="fa fa-linkedin"></i></a>{{/linkedin}}
-                                    {{#website}}<a href="{{website}}"><i class="fa fa-link"></i></a>{{/website}}
-                                    {{#email}}<a href="mailto={{email}}"><i class="fa fa-at"></i></a>{{/email}}
-								</div>
-							</div>
-						</div>
-						<div class="team-content">
-							<h3>{{name}}</h3>
-							<span>{{occupation}}</span>
-						</div>
-					</div>
-				</div>
-                {{/members}}
+                <div class="col-sm-12 team-holder">
+                    {{#members}}
+                        <div class="team">
+                            <div class="team-img">
+                                <img class="img-responsive" src="{{image}}" alt="{{name}}">
+                                <div class="overlay">
+                                    <div class="team-social">
+                                        {{#linkedin}}<a href="{{linkedin}}"><i class="fa fa-linkedin"></i></a>{{/linkedin}}
+                                        {{#website}}<a href="{{website}}"><i class="fa fa-link"></i></a>{{/website}}
+                                        {{#email}}<a href="mailto:{{email}}"><i class="fa fa-at"></i></a>{{/email}}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-content" style="white-space: normal">
+                                <h3>{{name}}</h3>
+                                <span>{{occupation}}</span>
+                            </div>
+                        </div>
+                    {{/members}}
+                </div>
 			</div>
 		</div>
 	</div>
@@ -291,14 +277,14 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-12">
                     <div id="sponsors-slider" class="owl-carousel owl-theme">
 
                         {{#sponsors}}
                         <div class="sponsor">
                             <div class="sponsor-meta">
                                 <img src="{{image}}" alt="">
-                                <p>Web Designers</p>
+                                <p>{{title}}</p>
                             </div>
                         </div>
                         {{/sponsors}}

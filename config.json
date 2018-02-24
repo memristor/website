@@ -1,24 +1,56 @@
 {
   "title": "Memristor Robotics",
-  "url": "https://memristorrobotics.com/",
+  "url": "http://memristorrobotics.com/",
   "defaultLanguage": "en",
   "phone": "+381 64 2459972",
   "email": "info@MemristorRobotics.com",
   "address": "University of Novi Sad, Serbia",
   "members": [
     {
-      "name": "Darko Lukic",
+      "name": "Miodrag Brkić",
+      "occupation": "University Professor",
+      "image": "/img/team/01.jpg",
+      "email": "brkic.miodrag@uns.ac.rs"
+    },
+    {
+      "name": "Darko Lukić",
       "occupation": "Master student of Computer Engineering",
       "image": "/img/team/DarkoL.jpg",
       "linkedin": "https://www.linkedin.com/in/lukicdakroo",
       "website": "http://lukicdarkoo.github.io/",
       "email": "lukicdarkoo@gmail.com"
+    },
+    {
+      "name": "Nikola Rašević",
+      "occupation": "Bachelor student of Electrical Engineering",
+      "image": "/img/team/NikolaR.jpg",
+      "email": "rasevicnikola@yahoo.com"
+    },
+    {
+      "name": "Nemanja Milovanović",
+      "occupation": "Master of Mechatronic Engineering",
+      "image": "/img/team/NemanjaM.jpg",
+      "email": ""
+    },
+    {
+      "name": "Željko Popović",
+      "occupation": "Bachelor student of Electrical Engineering",
+      "image": "/img/team/ZeljkoP.jpg",
+      "email": ""
     }
   ],
   "sponsors": [
     {
       "image": "/img/sponsors/FTN.png",
       "title": "Faculty of Technical Sciences, Novi Sad"
+    },
+    {
+      "image": "/img/sponsors/Gumabelt.png",
+      "title": "Gumabelt"
+    },
+    {
+      "image": "/img/sponsors/ZandS.png",
+      "title": "ZandS"
     }
   ]
 }

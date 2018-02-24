@@ -42,4 +42,4 @@ join_text: <p>If you are interesting in robotics and you want to learn you are w
      <i class="fa fa-check"></i>
      <p>compete with the best students in the world in robotics</p>
   </div>
-  We cought you attention? <a href="#cotnact">Fill the form and join</a>!
+  We cought you attention? <a class="nav" href="#contact">Fill the form and join</a>!

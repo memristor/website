@@ -992,35 +992,38 @@ header {
     text-transform: uppercase;
 }
 
-
 .sponsor {
-    margin: 15px 0px;
-    background-color: red;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 150px;
 }
 
-.sponsor-meta {
-    margin-bottom: 20px;
-    padding-top: 10px;
+.sponsor p {
+    text-align: center;
 }
 
 .sponsor img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100% !important;
     max-height: 150px !important;
-    border-radius: 50%;
 }
 
 /*------------------------------------*\
 	Team
 \*------------------------------------*/
 
+.team-holder {
+    overflow-x: scroll;
+    white-space: nowrap;
+    height: 500px;
+    overflow-y: hidden;
+}
+
 .team {
     position: relative;
     background-color: #F4F4F4;
     padding: 40px 20px;
     margin: 15px 0px;
+    width: 300px;
+    display: inline-block;
 }
 
 .team::after {
@@ -1047,7 +1050,8 @@ header {
 }
 
 .team-img>img {
-  width: 100%;
+    width: 100%;
+    max-height: 270px;
 }
 
 .team .overlay {

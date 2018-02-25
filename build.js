@@ -19,7 +19,7 @@ function discoverLanguages() {
 }
 
 function renderFile() {
-    let mustacheContent = fs.readFileSync('public/_index.html').toString();
+    let mustacheContent = fs.readFileSync('public/index.mustache').toString();
 
     // Load languages in config
     config['languages'] = [];

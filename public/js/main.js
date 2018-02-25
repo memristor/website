@@ -1,18 +1,43 @@
-function checkVisible(id, threshold, mode) {
+function SmartVideoPlayer(id) {
+    this._playerNode = document.getElementById(id);
+    var smartVideoPlayer = this;
+    var autoPlayEnabled = true;
+    var videoVisible = null;
+    var iframeMouseOver = false;
+
+    window.addEventListener('blur', function() {
+        if(iframeMouseOver) {
+            autoPlayEnabled = false;
+        }
+    });
+    this._playerNode.addEventListener('mouseover', function() { iframeMouseOver = true; });
+    this._playerNode.addEventListener('mouseout', function() { iframeMouseOver = false; });
+
+    addEventListener('scroll', function () {
+        if (autoPlayEnabled === true) {
+            if (videoVisible === null || videoVisible !== smartVideoPlayer._checkVisible()) {
+                videoVisible = smartVideoPlayer._checkVisible();
+                smartVideoPlayer._setState(videoVisible ? 'playVideo' : 'pauseVideo');
+            }
+        }
+    });
+}
+
+SmartVideoPlayer.prototype._checkVisible = function(threshold, mode) {
     threshold = threshold || 0;
     mode = mode || 'visible';
-    var elm = document.getElementById(id);
-    var rect = elm.getBoundingClientRect();
+    var rect = this._playerNode.getBoundingClientRect();
     var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
     var above = rect.bottom - threshold < 0;
     var below = rect.top - viewHeight + threshold >= 0;
     return mode === 'above' ? above : (mode === 'below' ? below : !above && !below);
-}
+};
 
-function setVideoState(element, state) {
-    var iframe = document.getElementById(element).contentWindow;
+SmartVideoPlayer.prototype._setState = function(state) {
+    var iframe = this._playerNode.contentWindow;
     iframe.postMessage('{"event":"command","func":"' + state + '","args":""}', '*');
-}
+};
+
 
 (function($) {
 	///////////////////////////
@@ -21,6 +46,10 @@ function setVideoState(element, state) {
 		target: '#nav',
 		offset: $(window).height() / 2
 	});
+
+    // Video play
+    new SmartVideoPlayer('video-intro');
+    new SmartVideoPlayer('video-join');
 
 	///////////////////////////
 	// Smooth scroll
@@ -60,11 +89,6 @@ function setVideoState(element, state) {
 
 		// Back To Top Appear
 		wScroll > 700 ? $('#back-to-top').fadeIn() : $('#back-to-top').fadeOut();
-
-		// Video play
-        for (var id of ['video-intro', 'video-join']) {
-            setVideoState(id, checkVisible(id) ? 'playVideo' : 'pauseVideo');
-        }
 	});
 
 	///////////////////////////
@@ -88,6 +112,9 @@ function setVideoState(element, state) {
             0:{
                 items:1,
             },
+            300: {
+                items: 2,
+            },
             600:{
                 items:3,
             },
@@ -109,8 +136,14 @@ function setVideoState(element, state) {
             0:{
                 items: 1,
             },
-            600:{
+            300: {
+                items: 1.5,
+            },
+            500: {
                 items: 2,
+            },
+            700:{
+                items: 3,
             },
             1000:{
                 items: 4,

@@ -11,8 +11,8 @@ If you want to add team members, sponsors, change default language you should ch
 All CSS/HTML/JS files are located under `/public` directory. 
 
 **Running locally**  
-Make sure that you Node and npm installed. Run `npm install` to install dependencies and then `npm run build` 
-every time you change something in order to generate new files. 
+Make sure that you Node and npm installed. Run `npm install` to install dependencies and then `npm run dev`. 
+Every time you make a change the page will reload automatically.
 
 ## Under the hood
 [Netlify](https://www.netlify.com/) detects new commits and on each push it runs `npm install; npm run build`. 

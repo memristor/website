@@ -11,13 +11,20 @@ about_text: >
   component <a href="https://en.wikipedia.org/wiki/Memristor">memristor</a> is created. Since that year Memristor is competing on <a href="http://www.eurobot.org/">Eurobot</a> competition, each year winning one of
   first three places on national competition and achieving great results on international Eurobot competition.</p>
 pcb_design: PCB Design
-pcb_design_text: Designing PCB in Altium, Circuit Prototyping and Simulation, Soldering, CAN bus
+pcb_design_text: >
+  <a href="https://github.com/Memristor-Robotics/pic-motion-driver/blob/master/docs/BTN_driver_sch.pdf">Designing PCB in Altium</a>,
+  Circuit Prototyping and Simulation, Soldering, CAN bus
 cad_modeling: Robot Modeling
 cad_modeling_text: Designing 3D Models & Simulation in CAD software, Robot Assembly, Components Manufacturing
 firmware_development: Firmware Development
-firmware_development_text: Programming Microcontrollers, AVR, PIC, ARM, Arduino, Odometry based Motion
+firmware_development_text: >
+  Programming Microcontrollers, AVR, PIC, ARM, Arduino,
+  <a href="https://github.com/Memristor-Robotics/pic-motion-driver/tree/master/src">Odometry based Motion</a>
 software_development: Software Development
-software_development_text: ROS, Visualization and Simulation, Raspberry Pi, Communication, High-Level Decision
+software_development_text: >
+  ROS, <a href="https://github.com/Memristor-Robotics/mep-dash">Visualization and Simulation</a>,
+  Raspberry Pi, Communication,
+  <a href="https://github.com/Memristor-Robotics/mep-master">High-Level Decision</a>
 algorithm_development: Algorithm Development
 algorithm_development_text: Pathfinding, LiDAR-based obstacle reconstruction, Odometry, PID
 3d_printing: 3D Printing

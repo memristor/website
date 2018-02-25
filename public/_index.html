@@ -330,12 +330,12 @@
                     </div>
                 </div>
                 <div class="col-md-8 col-md-offset-2">
-                    <form class="contact-form" action="javascript: alert('Online form doesn\'t work yet :(')">
-                        <input type="text" class="input" placeholder="Name">
-                        <input type="email" class="input" placeholder="Email">
-                        <input type="text" class="input" placeholder="Subject">
-                        <textarea class="input" placeholder="Message"></textarea>
-                        <button class="main-btn">Send message</button>
+                    <form class="contact-form" data-netlify="true">
+                        <input type="text" class="input" placeholder="{{#t}}Name{{/t}}">
+                        <input type="email" class="input" placeholder="{{#t}}Email{{/t}}">
+                        <input type="text" class="input" placeholder="{{#t}}Subject{{/t}}">
+                        <textarea class="input" placeholder="{{#t}}Message{{/t}}"></textarea>
+                        <button class="main-btn">{{#t}}Send message{{/t}}</button>
                     </form>
                 </div>
             </div>

@@ -1,2 +1,21 @@
 description: Mi pravimo autonomne robote
-description_long:
+description_long: >
+  Mi smo grupa studenata sa različitih inžinjerskih odseka, mehanike, elektronike
+  i programiranja, ali svi mi volimo da pravimo robote
+Home: Početna
+About: O nama
+Gallery: Galerija
+Team: Tim
+Join: Pridruži se
+Sponsors: Sponzori
+Contact: Kontakt
+About Us: O nama
+about_text: >
+    <p>Memristor je robotičarski tim orjentisan ka istraživanju i razvoju. Cilj je da edukuje članove i obezbedi okruženje za razvoj te tako unapredi njihove sposobnosti.
+    Udružuje studente sa različitih inžinjerskih disciplina i uči ih kako da prave potpuno autonomne robote i najvažnije uči ih kako
+    da rade u timu.</p>
+
+
+    <p>Tim su osnovali profesori sa Univerziteta u Novom Sadu 2007. godine, iste godine kada je prva elektronska komponenta
+    <a href="https://en.wikipedia.org/wiki/Memristor">memristor</a> napravljena. Od te godine Memristor se takmiči na <a href="http://www.eurobot.org/">Eurobot</a> takmičenju,
+    svake godine osvajajući jedno od prva tri mesta i postižući zapažene rezultate na internacionalnom Eurobot takmičenju.</p>

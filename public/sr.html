@@ -4,10 +4,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
 
 	<title>Memristor Robotics | Mi pravimo autonomne robote</title>
-    <meta name="description" content="">
+    <meta name="description" content="Mi smo grupa studenata sa različitih inžinjerskih odseka, mehanike, elektronike i programiranja, ali svi mi volimo da pravimo robote
+">
     <meta name="keywords" content="keywords">
 
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -40,14 +41,20 @@
 					</div>
 				</div>
 				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
+					<li><a href="#home">Početna</a></li>
+					<li><a href="#about">O nama</a></li>
 					<li><a href="#rd">R&D</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-					<li><a href="#team">Team</a></li>
-                    <li><a href="#join">Join</a></li>
-                    <li><a href="#sponsors">Sponsors</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#gallery">Galerija</a></li>
+					<li><a href="#team">Tim</a></li>
+                    <li><a href="#join">Pridruži se</a></li>
+                    <li><a href="#sponsors">Sponzori</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li class="has-dropdown"><a href="#blog">SR</a>
+                        <ul class="dropdown">
+                            <li><a href="index.html">EN</a></li>
+                            <li><a href="sr.html">SR</a></li>
+                        </ul>
+                    </li>
 				</ul>
 			</div>
 		</nav>
@@ -57,7 +64,8 @@
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
 							<h1 class="white-text">Mi pravimo autonomne robote</h1>
-                            <p class="white-text"></p>
+                            <p class="white-text">Mi smo grupa studenata sa različitih inžinjerskih odseka, mehanike, elektronike i programiranja, ali svi mi volimo da pravimo robote
+</p>
 						</div>
 					</div>
 				</div>
@@ -71,10 +79,13 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="section-header">
-                        <h2 class="title">About Us</h2>
+                        <h2 class="title">O nama</h2>
                     </div>
 
-                    about_text
+                    <p>Memristor je robotičarski tim orjentisan ka istraživanju i razvoju. Cilj je da edukuje članove i obezbedi okruženje za razvoj te tako unapredi njihove sposobnosti. Udružuje studente sa različitih inžinjerskih disciplina i uči ih kako da prave potpuno autonomne robote i najvažnije uči ih kako da rade u timu.</p>
+
+<p>Tim su osnovali profesori sa Univerziteta u Novom Sadu 2007. godine, iste godine kada je prva elektronska komponenta <a href="https://en.wikipedia.org/wiki/Memristor">memristor</a> napravljena. Od te godine Memristor se takmiči na <a href="http://www.eurobot.org/">Eurobot</a> takmičenju, svake godine osvajajući jedno od prva tri mesta i postižući zapažene rezultate na internacionalnom Eurobot takmičenju.</p>
+
                 </div>
                 <div class="col-md-6">
                     <iframe id="video-intro" width="100%" height="380px" src="https://www.youtube.com/embed/ZyOuAHrKX2c?rel=0&amp;controls=0&amp;showinfo=0&amp;enablejsapi=1" frameborder="0"></iframe>
@@ -181,7 +192,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="section-header text-center">
-					<h2 class="title">Gallery</h2>
+					<h2 class="title">Galerija</h2>
 				</div>
                 <div id="instafeed"></div>
 			</div>
@@ -229,7 +240,7 @@
 					<h2 class="title">Our Team</h2>
 				</div>
 
-                <div class="col-sm-12 team-holder">
+                <div class="col-sm-12 owl-carousel owl-theme" id="team-holder">
                         <div class="team">
                             <div class="team-img">
                                 <img class="img-responsive" src="&#x2F;img&#x2F;team&#x2F;01.jpg" alt="Miodrag Brkić">
@@ -422,7 +433,9 @@
 						<li><a href="https://www.youtube.com/channel/UC1LYpli22VV5Ndgr9rjU66A"><i class="fa fa-youtube"></i></a></li>
 					</ul>
 					<div class="footer-copyright">
-						<p>Copyright © 2017. All Rights Reserved. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+						<p>Copyright © 2018. All Rights Reserved.<br />
+                            Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        </p>
 					</div>
 				</div>
 			</div>

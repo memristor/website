@@ -994,8 +994,8 @@ header {
 
 .sponsor {
     margin: 0 !important;
-    padding: 0 !important;
     width: 150px;
+    padding: 5px;
 }
 
 .sponsor p {
@@ -1010,20 +1010,12 @@ header {
 	Team
 \*------------------------------------*/
 
-.team-holder {
-    overflow-x: scroll;
-    white-space: nowrap;
-    height: 500px;
-    overflow-y: hidden;
-}
-
 .team {
     position: relative;
     background-color: #F4F4F4;
     padding: 40px 20px;
     margin: 15px 0px;
-    width: 300px;
-    display: inline-block;
+    width: 250px;
 }
 
 .team::after {

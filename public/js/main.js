@@ -77,14 +77,46 @@ function setVideoState(element, state) {
 	///////////////////////////
 
 	$('#sponsors-slider').owlCarousel({
+        center: true,
 		loop: true,
 		dots: true,
 		nav: true,
 		autoplay: true,
-        autoplayTimeout: 1000,
-        items: 5,
-        mouseDrag: false,
+        autoplayTimeout: 1500,
+        items: 3,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:3,
+            },
+            1000:{
+                items:5,
+            }
+        }
 	});
+
+    $('#team-holder').owlCarousel({
+        center: true,
+        loop: true,
+        dots: true,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 1500,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{
+                items: 1,
+            },
+            600:{
+                items: 2,
+            },
+            1000:{
+                items: 4,
+            }
+        }
+    });
 
 	// Gallery
     var feed = new Instafeed({

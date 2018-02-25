@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ languageCode }}">
+<html lang="{{ language.code }}">
 
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
 
 	<title>{{title}} | {{#t}}description{{/t}}</title>
     <meta name="description" content="{{#t}}description_long{{/t}}">
@@ -40,14 +40,21 @@
 					</div>
 				</div>
 				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#rd">R&D</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-					<li><a href="#team">Team</a></li>
-                    <li><a href="#join">Join</a></li>
-                    <li><a href="#sponsors">Sponsors</a></li>
-                    <li><a href="#contact">Contact</a></li>
+					<li><a href="#home">{{#t}}Home{{/t}}</a></li>
+					<li><a href="#about">{{#t}}About{{/t}}</a></li>
+					<li><a href="#rd">{{#t}}R&D{{/t}}</a></li>
+                    <li><a href="#gallery">{{#t}}Gallery{{/t}}</a></li>
+					<li><a href="#team">{{#t}}Team{{/t}}</a></li>
+                    <li><a href="#join">{{#t}}Join{{/t}}</a></li>
+                    <li><a href="#sponsors">{{#t}}Sponsors{{/t}}</a></li>
+                    <li><a href="#contact">{{#t}}Contact{{/t}}</a></li>
+                    <li class="has-dropdown"><a href="#blog">{{ language.code_up }}</a>
+                        <ul class="dropdown">
+                            {{#languages}}
+                            <li><a href="{{file}}">{{code_up}}</a></li>
+                            {{/languages}}
+                        </ul>
+                    </li>
 				</ul>
 			</div>
 		</nav>
@@ -229,7 +236,7 @@
 					<h2 class="title">{{#t}}Our Team{{/t}}</h2>
 				</div>
 
-                <div class="col-sm-12 team-holder">
+                <div class="col-sm-12 owl-carousel owl-theme" id="team-holder">
                     {{#members}}
                         <div class="team">
                             <div class="team-img">
@@ -350,7 +357,9 @@
 						<li><a href="https://www.youtube.com/channel/UC1LYpli22VV5Ndgr9rjU66A"><i class="fa fa-youtube"></i></a></li>
 					</ul>
 					<div class="footer-copyright">
-						<p>Copyright © 2017. All Rights Reserved. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+						<p>Copyright © {{ year }}. All Rights Reserved.<br />
+                            Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        </p>
 					</div>
 				</div>
 			</div>

@@ -406,12 +406,14 @@
                     </div>
                 </div>
                 <div class="col-md-8 col-md-offset-2">
-                    <form class="contact-form" action="javascript: alert('Online form doesn\'t work yet :(')">
-                        <input type="text" class="input" placeholder="Name">
-                        <input type="email" class="input" placeholder="Email">
-                        <input type="text" class="input" placeholder="Subject">
-                        <textarea class="input" placeholder="Message"></textarea>
-                        <button class="main-btn">Send message</button>
+                    <form class="contact-form" name="contact" data-netlify="true">
+                        <div>
+                            <input type="text" name="name" class="input" placeholder="Name">
+                            <input type="email" name="email" class="input" placeholder="Email">
+                            <input type="text" name="subject" class="input" placeholder="Subject">
+                            <textarea name="message" class="input" placeholder="Message"></textarea>
+                            <button class="main-btn">Send message</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -427,10 +429,10 @@
 						<a href="/"><img src="img/logo-alt.png" alt="logo"></a>
 					</div>
 					<ul class="footer-follow">
-						<li><a href="https://www.facebook.com/MemristorRobotics/"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="https://twitter.com/MemristorRobots"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="https://www.instagram.com/MemristorRobotics/"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="https://www.youtube.com/channel/UC1LYpli22VV5Ndgr9rjU66A"><i class="fa fa-youtube"></i></a></li>
+						<li><a target="_blank" href="https://www.facebook.com/MemristorRobotics/"><i class="fa fa-facebook"></i></a></li>
+						<li><a target="_blank" href="https://twitter.com/MemristorRobots"><i class="fa fa-twitter"></i></a></li>
+						<li><a target="_blank" href="https://www.instagram.com/MemristorRobotics/"><i class="fa fa-instagram"></i></a></li>
+						<li><a target="_blank" href="https://www.youtube.com/channel/UC1LYpli22VV5Ndgr9rjU66A"><i class="fa fa-youtube"></i></a></li>
 					</ul>
 					<div class="footer-copyright">
 						<p>Copyright © 2018. All Rights Reserved.<br />

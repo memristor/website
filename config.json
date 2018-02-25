@@ -24,6 +24,7 @@
       "name": "Nikola Rašević",
       "occupation": "Bachelor student of Electrical Engineering",
       "image": "/img/team/NikolaR.jpg",
+      "linkedin": "https://www.linkedin.com/in/nikirasevic",
       "email": "rasevicnikola@yahoo.com"
     },
     {
@@ -37,6 +38,12 @@
       "occupation": "Bachelor student of Electrical Engineering",
       "image": "/img/team/ZeljkoP.jpg",
       "email": ""
+    },
+    {
+      "name": "Ivan Matić",
+      "occupation": "Bechelor student of Mechatronic Engineering",
+      "image": "/img/team/01.jpg"
+
     }
   ],
   "sponsors": [

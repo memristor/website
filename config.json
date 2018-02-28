@@ -5,47 +5,8 @@
   "phone": "+381 64 2459972",
   "email": "info@MemristorRobotics.com",
   "address": "University of Novi Sad, Serbia",
-  "members": [
-    {
-      "name": "Miodrag Brkić",
-      "occupation": "University Professor",
-      "image": "/img/team/01.jpg",
-      "email": "brkic.miodrag@uns.ac.rs"
-    },
-    {
-      "name": "Darko Lukić",
-      "occupation": "Master student of Computer Engineering",
-      "image": "/img/team/DarkoL.jpg",
-      "linkedin": "https://www.linkedin.com/in/lukicdakroo",
-      "website": "http://lukicdarkoo.github.io/",
-      "email": "lukicdarkoo@gmail.com"
-    },
-    {
-      "name": "Nikola Rašević",
-      "occupation": "Bachelor student of Electrical Engineering",
-      "image": "/img/team/NikolaR.jpg",
-      "linkedin": "https://www.linkedin.com/in/nikirasevic",
-      "email": "rasevicnikola@yahoo.com"
-    },
-    {
-      "name": "Nemanja Milovanović",
-      "occupation": "Master of Mechatronic Engineering",
-      "image": "/img/team/NemanjaM.jpg",
-      "email": ""
-    },
-    {
-      "name": "Željko Popović",
-      "occupation": "Bachelor student of Electrical Engineering",
-      "image": "/img/team/ZeljkoP.jpg",
-      "email": ""
-    },
-    {
-      "name": "Ivan Matić",
-      "occupation": "Bechelor student of Mechatronic Engineering",
-      "image": "/img/team/01.jpg"
-
-    }
-  ],
+  "members_spreadsheet": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSrgAMU8xHFmGX31KDs8KcGEPJVXS0H_N_F63uSwK1Di9CqhDcCZy-8cxnEikWB8H6yiLdnbN2UYiBS/pub?output=csv",
+  "members_min_experience": 1,
   "sponsors": [
     {
       "image": "/img/sponsors/FTN.png",

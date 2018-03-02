@@ -1,44 +1,3 @@
-function SmartVideoPlayer(id) {
-    this._playerNode = document.getElementById(id);
-    var smartVideoPlayer = this;
-    var autoPlayEnabled = true;
-    var videoVisible = null;
-    var iframeMouseOver = false;
-
-    window.addEventListener('blur', function() {
-        if(iframeMouseOver) {
-            autoPlayEnabled = false;
-        }
-    });
-    this._playerNode.addEventListener('mouseover', function() { iframeMouseOver = true; });
-    this._playerNode.addEventListener('mouseout', function() { iframeMouseOver = false; });
-
-    addEventListener('scroll', function () {
-        if (autoPlayEnabled === true) {
-            if (videoVisible === null || videoVisible !== smartVideoPlayer._checkVisible()) {
-                videoVisible = smartVideoPlayer._checkVisible();
-                smartVideoPlayer._setState(videoVisible ? 'playVideo' : 'pauseVideo');
-            }
-        }
-    });
-}
-
-SmartVideoPlayer.prototype._checkVisible = function(threshold, mode) {
-    threshold = threshold || 0;
-    mode = mode || 'visible';
-    var rect = this._playerNode.getBoundingClientRect();
-    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-    var above = rect.bottom - threshold < 0;
-    var below = rect.top - viewHeight + threshold >= 0;
-    return mode === 'above' ? above : (mode === 'below' ? below : !above && !below);
-};
-
-SmartVideoPlayer.prototype._setState = function(state) {
-    var iframe = this._playerNode.contentWindow;
-    iframe.postMessage('{"event":"command","func":"' + state + '","args":""}', '*');
-};
-
-
 (function($) {
 	///////////////////////////
 	// Scrollspy
@@ -47,10 +6,6 @@ SmartVideoPlayer.prototype._setState = function(state) {
 		offset: $(window).height() / 2
 	});
 
-    // Video play
-    new SmartVideoPlayer('video-intro');
-    new SmartVideoPlayer('video-join');
-
 	///////////////////////////
 	// Smooth scroll
 	$("#nav .main-nav a[href^='#']").on('click', function(e) {
@@ -58,12 +13,6 @@ SmartVideoPlayer.prototype._setState = function(state) {
 		var hash = this.hash;
 		$('html, body').animate({
 			scrollTop: $(this.hash).offset().top
-		}, 600);
-	});
-
-	$('#back-to-top').on('click', function(){
-		$('body,html').animate({
-			scrollTop: 0
 		}, 600);
 	});
 
@@ -159,7 +108,7 @@ SmartVideoPlayer.prototype._setState = function(state) {
         accessToken: '5404790759.1677ed0.68c78e97d8ab47d7bd70565554235ad2',
         resolution: 'low_resolution',
         template: '<div class="col-md-3 col-xs-6 work">\n' +
-        '<img class="img-responsive" src="{{image}}" style="width: 100%; height: 220px; object-fit: cover;" alt="">\n' +
+        '<img class="img-responsive" src="{{image}}" style="width:100%;height:220px;object-fit:cover;" alt="">\n' +
         '<div class="overlay"></div>\n' +
         '<div class="work-content">\n' +
         '<span>{{location}}</span>\n' +

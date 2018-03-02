@@ -267,6 +267,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .navbar-brand .logo, .navbar-brand .logo-alt {
     max-height: 50px;
     display: block;
+    padding-top: 7px;
 }
 
 #nav:not(.nav-transparent):not(.fixed-nav) .navbar-brand .logo-alt {
@@ -1044,7 +1045,8 @@ header {
 
 .team-img>img {
     width: 100%;
-    max-height: 270px;
+    height:250px;
+    object-fit:cover;
 }
 
 .team .overlay {

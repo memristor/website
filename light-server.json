@@ -1,6 +1,6 @@
 {
   "port": 8000,
-  "interval": 500,
+  "interval": 0,
   "delay": 0,
   "bind": "127.0.0.1",
   "serve": "public",

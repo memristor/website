@@ -100,7 +100,7 @@
         }
     });
 
-	// Gallery
+    // Gallery
     var feed = new Instafeed({
         get: 'user',
         userId: '5404790759',

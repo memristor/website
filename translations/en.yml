@@ -4,12 +4,9 @@ description_long: >
   and programming, and we all have a great passion for robotics
 keywords: memristor, serbia, ftn, novi sad, eurobot
 about_text: >
-  <p>Memristor is robotics team focused on research and development. It has a role to educate members and ensure development environment to enhance their skills. It brings together students from many engineering fields and
-  learning them how to build fully autonomous robots and the most important teamwork.</p>
+  <p>Memristor is a robotics team focused on research and development. It has a role to educate members and ensure development environment to enhance their skills. It brings together students from many engineering fields and teaches them how to build fully autonomous robots together with other team members.</p>
 
-  <p>The team is founded by professors from University of Novi Sad, Serbia in 2007, the same year when the first electronic
-  component <a href="https://en.wikipedia.org/wiki/Memristor">memristor</a> is created. Since that year Memristor is competing on <a href="http://www.eurobot.org/">Eurobot</a> competition, each year winning one of
-  first three places on national competition and achieving great results on international Eurobot competition.</p>
+  <p>The team is founded by professors from the University of Novi Sad, Serbia in 2007, the same year when the first electronic component memristor is created. Since that year Memristor has been competing on Eurobot competition, each year winning one of first three places on national competition and achieving great results on international Eurobot competition.</p>
 pcb_design: PCB Design
 pcb_design_text: >
   <a target="_blank" href="https://github.com/Memristor-Robotics/pic-motion-driver/blob/master/docs/BTN_driver_sch.pdf">Designing PCB in Altium</a>,

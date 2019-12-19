@@ -33,5 +33,43 @@
       "title": "Živko & Sinovi",
       "url": "http://www.zivko.co.rs/"
     }
+
+    {
+      "image": "/img/sponsors/elsys.png",
+      "title": "Elsys Eastern Europe",
+      "url": "http://www.elsys-eastern.com/"
+    }
+
+    {
+      "image": "/img/sponsors/hidrosrem.png",
+      "title": "HidroSrem",
+      "url": "http://www.hidrosrem.rs/"
+    }
+
+    {
+      "image": "/img/sponsors/levi9.png",
+      "title": "LeviNine",
+      "url": "https://www.levi9.com/"
+    }
+
+    {
+      "image": "/img/sponsors/metalfer.png",
+      "title": "Metalfer",
+      "url": "http://www.metalfer.net/"
+    }
+
+    {
+      "image": "/img/sponsors/Typhoon-HIL.png",
+      "title": "Typhoon HIL",
+      "url": "https://www.typhoon-hil.com/"
+    }
+
+    {
+      "image": "/img/sponsors/uniqa.png",
+      "title": "Uniqa",
+      "url": "https://www.uniqa.rs/"
+    }
+
+
   ]
 }

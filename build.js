@@ -21,7 +21,7 @@ function discoverLanguages() {
 }
 
 function renderFile() {
-    let mustacheContent = fs.readFileSync('public/index.mustache').toString();
+    let mustacheContent = "";
 
     // Load languages in config
     config['languages'] = [];
@@ -35,17 +35,15 @@ function renderFile() {
 
     for (let language of discoverLanguages()) {
         config['language'] = config['languages'].find(x => x.code === language);
-
+        mustacheContent =  language === config['default_language'] ? fs.readFileSync('public/index.html').toString() : fs.readFileSync('public/'+language + '.html').toString();
         let outputFilepath = path.join('./public/', config['language']['file']);
         let translationFilename = path.join('./translations/', language + '.yml');
         translation = yaml.load(translationFilename);
+        
 
         let html = Mustache.to_html(mustacheContent, config);
         fs.writeFileSync(outputFilepath, html);
     }
 }
 
-
-
-
-
+// renderFile();

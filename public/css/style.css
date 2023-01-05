@@ -134,6 +134,11 @@ ul, ol {
     padding-bottom: 60px;
 }
 
+.tb-padding {
+    padding-top: 100px;
+    /* padding-bottom: 60px; */
+}
+
 
 /* --  background section  -- */
 
@@ -1112,6 +1117,24 @@ header {
 
 .team:hover .team-social {
     opacity: 1;
+}
+
+
+/*------------------------------------*\
+	Achievements                        
+\*------------------------------------*/
+.achievements {
+    height: 150px;
+    width: 180px;
+}
+.achievements-img{
+    height: 25;
+    width: 35;
+}
+.achievements-table{
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
 }
 
 

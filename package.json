@@ -5,7 +5,7 @@
   "main": "build.js",
   "scripts": {
     "build": "node build.js",
-    "dev": "./node_modules/light-server/bin/light-server -c light-server.json",
+    "dev": "light-server -c light-server.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,6 +25,7 @@
   "homepage": "http://MemristorRobotics.com",
   "devDependencies": {
     "light-server": "^2.4.0",
+    "lite-server": "^2.6.1",
     "mustache": "^2.3.0"
   },
   "dependencies": {

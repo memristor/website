@@ -4,7 +4,6 @@
   "description": "Website for Memristor Robotics",
   "main": "build.js",
   "scripts": {
-    "build": "node build.js",
     "dev": "light-server -c light-server.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

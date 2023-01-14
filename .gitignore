@@ -2,5 +2,3 @@
 *.DS_Store
 *.db
 node_modules
-public/index.html
-public/sr.html

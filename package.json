@@ -28,7 +28,7 @@
     "mustache": "^2.3.0"
   },
   "dependencies": {
-    "request": "^2.83.0",
+    "request": "^2.88.2",
     "string-similarity": "^1.2.0",
     "yamljs": "^0.3.0"
   }
